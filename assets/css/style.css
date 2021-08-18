@@ -67,15 +67,6 @@ header nav ul li a {
     font-size: 1.35vw;
     text-shadow:  0 0 5px rgba(79, 109, 122, 0.75);   
 }
-
-/* style when hovering over*/
-header nav ul li a :hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 8px;
-    text-shadow: none;
-}
-
 /* header / navigation style end*/
 
 /* footer style start */
@@ -115,6 +106,18 @@ section {
     font-size: 40px;
     color: var(--tertiary-color);
     text-shadow: 5px 5px 5px rgba(234, 234, 234, 0.75);
+}
+/* hero styles end */
+
+/* about me section styles start */
+#about-me {
+    background-color: var(--tertiary-color);
+    margin: 20px 0 20px 0;
+    border-bottom: 5px solid rgba(234, 234, 234, 0.75);
+}
+
+#about-me h2 {
+    color: var(--secondary-color);
 }
 
 
