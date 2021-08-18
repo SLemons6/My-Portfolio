@@ -33,6 +33,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+    border-bottom: 5px solid var(--primary-color);
 }
 
 header h1  {
@@ -81,5 +82,39 @@ header nav ul li a :hover {
 footer {
     background: var(--primary-color);
     padding: 20px 20px;
-    display: 
+    display: flex;
 }
+
+footer h2 {
+    color: var(--primary-color);
+    font-size: 25px;
+    margin: 0;
+}
+/* footer style end*/
+
+/* section tags style start */
+section {
+    padding: 40px;
+}
+/* section tags style end */
+
+/* hero style start */
+.hero {
+    background-color: var(--secondary-color);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-attachment: fixed;
+    background-position: 70%;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: var(--tertiary-color);
+    text-shadow: 5px 5px 5px rgba(234, 234, 234, 0.75);
+}
+
+
