@@ -3,3 +3,83 @@
     --secondary-color: #c0d6df;
     --tertiary-color: #4f6d7a;
 }
+
+/* page style start*/ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* page style end*/
+
+/* body style start*/
+body {
+    background-color: var(--tertiary-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* body style end*/
+
+/* header / navigation style start*/
+header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70%;
+    padding: 15px 30px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1  {
+    font-weight: 800;
+    margin: 0;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px rgba(192, 214, 223, 0.75);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    font-weight: lighter;
+    font-size: 1.35vw;
+    text-shadow:  0 0 5px rgba(79, 109, 122, 0.75);   
+}
+
+/* style when hovering over*/
+header nav ul li a :hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    text-shadow: none;
+}
+
+/* header / navigation style end*/
+
+/* footer style start */
+footer {
+    background: var(--primary-color);
+    padding: 20px 20px;
+    display: 
+}
