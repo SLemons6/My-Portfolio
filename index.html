@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,41 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>My Portfolio</title>
 </head>
+
 <body>
     <!-- header/navigation -->
-    <header> 
+    <header>
         <h1>Shayne Lemons</h1>
-    <nav>
-        <!-- navigation bar list -->
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#my-projects">My Projects</a>
-            </li>
-            <li>
-                <a href="#contact-me">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <!-- navigation bar list -->
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#my-projects">My Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <!-- end of nav bar -->
 
     <!-- hero section -->
-    <section class="hero">
-            <div class="hero-main">
-                <h2>Check Out My Projects!</h2>
-            </div>
+    <section id="hero">
+        <h2>Check Out My Projects!</h2>
     </section>
     <!-- end of hero section -->
 
     <!-- "about me" section -->
     <section id="about-me">
-        <h2>About Me:</h2>
+        <div class="sidebar">
+            <h2>About Me</h2>
         </div>
-            <p>
+        <div class="content">
+            <p>Hi! My name is Shayne Lemons, and I'm a web development student based out of Portland, Oregon. <br> My growing skill set includes HTML, CSS, JavaScript, JQuery and experience with web, third-party, and server-side APIs.
             </p>
         </div>
     </section>
@@ -48,25 +50,27 @@
 
     <!-- "my projects section" -->
     <section id="my-projects">
-        <div class="flex-row">
+        <div class="sidebar">
             <h2>My Projects</h2>
         </div>
-        <div class="flex-box"> 
-            <h3 class="project-title">Run Buddy</h3>
-            <p>HTML and CSS</p>
-            <div class="box-img">
+        <div class="content">
+            <div class="project">
                 <a href="https://slemons6.github.io/run-buddy/">
-                <img src="./assets/images/run-buddy screenshot.png" alt="screenshot of Run Buddy website" />
+                    <img class="project-img" src="./assets/images/run-buddy screenshot.png" alt="Screenshot of Run Buddy website" />
+                    <div class="project-title">
+                        <h3>Run Buddy</h3>
+                        <p>HTML and CSS</p>
+                    </div>
                 </a>
             </div>
-        </div>
-        <div class="flex-box">
-            <h3 class="project-title">Horiseon</h3>
-            <p>Refactoring</p>
-            <div class="box-img">
+            <div class="project">
                 <a href="https://slemons6.github.io/Horiseon/">
-                <img src="./assets/images/horiseon screenshot.png" alt="screenshot of Horiseon website" />
-            </a>
+                    <img src="./assets/images/horiseon screenshot.png" alt="Screenshot of Horiseon website" />
+                    <div class="project-title">
+                        <h3>Horiseon</h3>
+                        <p>Refactoring</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -74,34 +78,28 @@
 
     <!-- "contact me" section start -->
     <section id="contact-me">
-        <div class="flex-row">
+        <div class="sidebar">
             <h2>Contact Me</h2>
         </div>
-        <ul>
-            <li>
-                <a href="tel:3602138473">(360) 213-8473</a>
-            </li>
-            <li>
-                <a href="mailto: lemonsshayne6@gmail.com">lemonsshayne6@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://github.com/SLemons6">GitHub</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/shayne-lemons-038555216">Linkedin</a>
-            </li>
-        </ul>
+        <div class="content">
+            <ul class="">
+                <li>
+                    <a href="tel:3602138473">(360) 213-8473</a>
+                </li>
+                <li>
+                    <a href="mailto: lemonsshayne6@gmail.com">lemonsshayne6@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://github.com/SLemons6">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/shayne-lemons-038555216">Linkedin</a>
+                </li>
+            </ul>
+        </div>
 
     </section>
     <!-- "contact me" section end-->
-
-    <!-- footer start -->
-    <footer>
-        <h2>
-            Made by Shayne Lemons
-        </h2>
-    </footer>
-    <!-- footer end -->
 
 </body>
 
