@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>My Portfolio</title>
 </head>
@@ -12,65 +16,97 @@
 <body>
     <!-- header/navigation -->
     <header>
-        <h1>Shayne Lemons</h1>
-        <nav>
-            <!-- navigation bar list -->
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-projects">My Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
+        <nav class="navbar sticky-top d-flex flex-row align-items-center">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1>Shayne Lemons</h1>
+                </div>
+                <!-- navigation bar list -->
+                <ul class="d-flex flex-row pt-3">
+                    <li class="mx-3">
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="#my-projects">My Projects</a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- end of nav bar -->
 
     <!-- hero section -->
     <section id="hero">
-        <h2>Check Out My Projects!</h2>
+        <div class="container-fluid py-4">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Check Out My Projects!</h2>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- end of hero section -->
 
     <!-- "about me" section -->
     <section id="about-me">
-        <div class="sidebar">
-            <h2>About Me</h2>
-        </div>
-        <div class="content">
-            <p>Hi! My name is Shayne Lemons, and I'm a web development student based out of Portland, Oregon. <br> My growing skill set includes HTML, CSS, JavaScript, JQuery and experience with web, third-party, and server-side APIs.
-            </p>
+        <div class="container-fluid py-4">
+            <div class="row">
+                <div class="col-2">
+                    <h2 class="text-end pt-4">About Me</h2>
+                </div>
+                <div class="col-10 content">
+                    <p class="pt-4">Hi! My name is Shayne Lemons, and I'm a web development student based out of Portland, Oregon. My growing skill set includes HTML, CSS, JavaScript, JQuery and experience with web, third-party, and server-side APIs, as well as CSS frameworks
+                        like Bootstrap and Bulma.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- "about me section end"-->
 
     <!-- "my projects section" -->
     <section id="my-projects">
-        <div class="sidebar">
-            <h2>My Projects</h2>
-        </div>
-        <div class="content">
-            <div class="project">
-                <a href="https://slemons6.github.io/run-buddy/">
-                    <img class="project-img" src="./assets/images/run-buddy screenshot.png" alt="Screenshot of Run Buddy website" />
-                    <div class="project-title">
-                        <h3>Run Buddy</h3>
-                        <p>HTML and CSS</p>
+        <div class="container-fluid py-4">
+            <div class="row">
+                <div class="col-2 sidebar">
+                    <h2 class="text-end pt-4">My Projects</h2>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12 d-flex content">
+                            <a class="project card m-2" href="https://slemons6.github.io/Bark/">
+                                <img class="project-img card-img-top" src="./assets/images/bark screenshot.jpg" alt="Screenshot of Bark website" />
+                                <div class="project-title card-body">
+                                    <h3 class="card-title text-center">Bark</h3>
+                                    <p class="card-text text-center">Front-End Application</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://slemons6.github.io/Horiseon/">
-                    <img src="./assets/images/horiseon screenshot.png" alt="Screenshot of Horiseon website" />
-                    <div class="project-title">
-                        <h3>Horiseon</h3>
-                        <p>Refactoring</p>
+                    <div class="row content">
+                        <div class="col-6 d-flex">
+                            <a class="project card m-2" href="https://slemons6.github.io/run-buddy/">
+                                <img class="project-img card-img-top h-75" src="./assets/images/run-buddy screenshot.png" alt="Screenshot of Run Buddy website" />
+                                <div class="project-title card-body">
+                                    <h3 class="card-title text-center">Run Buddy</h3>
+                                    <p class="card-text text-center">HTML and CSS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 d-flex">
+                            <a class="project card m-2" href="https://slemons6.github.io/Horiseon/">
+                                <img class="project-img card-img-top h-75" src="./assets/images/horiseon screenshot.png" alt="Screenshot of Horiseon website" />
+                                <div class="project-title card-body">
+                                    <h3 class="card-title text-center">Horiseon</h3>
+                                    <p class="card-text text-center">Refactoring</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -78,29 +114,44 @@
 
     <!-- "contact me" section start -->
     <section id="contact-me">
-        <div class="sidebar">
-            <h2>Contact Me</h2>
+        <div class="container-fluid py-4">
+            <div class="row">
+                <div class="col-2 sidebar">
+                    <h2 class="text-end pt-4">Contact Me</h2>
+                </div>
+                <div class=" col-10 content pt-4 align-items-center">
+                    <ul class="d-flex flex-row justify-content-evenly">
+                        <li>
+                            <span>
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <a href="tel:3602138473">(360) 213-8473</a>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <a href="mailto: lemonsshayne6@gmail.com">lemonsshayne6@gmail.com</a>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="bi bi-window"></i>
+                            </span>
+                            <a href="https://github.com/SLemons6">GitHub</a>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="fas fa-file"></i>
+                            </span>
+                            <a href="https://www.linkedin.com/in/shayne-lemons-038555216">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="content">
-            <ul class="">
-                <li>
-                    <a href="tel:3602138473">(360) 213-8473</a>
-                </li>
-                <li>
-                    <a href="mailto: lemonsshayne6@gmail.com">lemonsshayne6@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://github.com/SLemons6">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/shayne-lemons-038555216">Linkedin</a>
-                </li>
-            </ul>
-        </div>
-
     </section>
     <!-- "contact me" section end-->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
